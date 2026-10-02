@@ -1,3 +1,20 @@
+# GraphRAG document pipeline
+
+A public Python/FastAPI project that turns source documents into a searchable GraphRAG index and serves answers with source metadata. It also maps extracted concepts into a 3D “memory palace” for exploration.
+
+## What the code shows
+
+- **Document pipeline:** PDF preprocessing and normalization, domain-specific GraphRAG indexing, and a job orchestrator for upload-to-index processing.
+- **API behavior:** `POST /orchestrator/upload` starts a job; `GET /orchestrator/jobs/{id}/status` exposes its state; `POST /jobs/{id}/query` answers against a completed job. A separate `POST /query` endpoint serves prepared snapshots.
+- **Grounding and failure handling:** query responses include source metadata when available; upload rejects empty or oversized input; job status exposes failures. The [API contract](docs/API.md) and [runbook](docs/RUNBOOK.md) describe the behavior and reproduction steps.
+
+This is a self-produced public project, **not a paid client case study**. The repository documents implementation and reproducibility; it does not claim an independently measured production SLA or customer outcome.
+
+## Scoped development inquiries
+
+I can review a bounded document-processing, retrieval/citation, or FastAPI integration problem. Please send a redacted sample or reproducible failure, desired output, deadline, and budget through [LinkedIn](https://www.linkedin.com/in/hyoseok-oh-791530263/). I will confirm the scope and quote before any work is agreed. Please do not send customer secrets or credentials.
+
+---
 ## 회랑 GraphRAG 파이프라인
 
 학습 자료(한국사 교과서, 통계 교안 등)를 1인칭 3D 기억의 궁전으로 만드는 백엔드.
