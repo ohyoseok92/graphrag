@@ -169,3 +169,9 @@ python palace/tests/compare_golden.py --run-id korean_history   # 캐시 히트 
 - 재현 절차: [docs/RUNBOOK.md](./docs/RUNBOOK.md)
 - 실험 누적 narrative: [docs/EXPERIMENTS.md](./docs/EXPERIMENTS.md)
 - 규약: [docs/CONVENTIONS.md](./docs/CONVENTIONS.md)
+
+## 단발 개발 문의
+
+이 저장소는 공개 프로젝트 예시이며 유료 고객 납품 사례가 아닙니다. 문서 전처리, 검색 결과의 근거 추적, 재현 가능한 RAG 오류 수정, FastAPI 연동처럼 범위가 분명한 **유료 단발 개발**을 문의하려면 [LinkedIn 프로필](https://www.linkedin.com/in/hyoseok-oh-791530263/)로 연락해 주세요.
+
+현재 입력 자료의 형태, 기대하는 결과, 재현 가능한 오류 또는 최소 예시, 원하는 일정과 예산을 알려 주시면 먼저 작업 범위를 검토하겠습니다. 고객 데이터와 비밀키는 보내지 말고 비식별 샘플을 사용해 주세요. 범위와 비용은 자료를 확인한 뒤 개별 협의합니다.
